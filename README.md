@@ -1,6 +1,6 @@
 # simple-EC2.tf
 
-TerraformでAWS上にEC2を立ち上げるサンプルです。  
+🐈‍⬛🐈‍⬛🐈‍⬛ TerraformでAWS上にEC2を立ち上げるサンプルです。  
 基本的な構成要素は以下の通りです。  
 
 * VPC

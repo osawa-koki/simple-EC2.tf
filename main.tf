@@ -87,10 +87,6 @@ resource "aws_key_pair" "example" {
   public_key = file(var.ssh_public_key_path)
 }
 
-resource "aws_eip" "example" {
-  vpc = true
-}
-
 resource "aws_instance" "example" {
   ami = "ami-be4a24d9"
   instance_type = "t2.micro"
@@ -101,4 +97,8 @@ resource "aws_instance" "example" {
   tags = {
     Name = var.project_name
   }
+}
+
+output "ip_address" {
+  value = aws_instance.example.public_ip
 }
